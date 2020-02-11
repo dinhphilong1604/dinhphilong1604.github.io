@@ -5,7 +5,7 @@
 	<title>Happy Valentine 14/02/2020</title>
 	<h4>Trần Ngọc Quỳnh Như - Đinh Phi Long (14/07/2019 -> 14/02/2020)</h4>
 	<link rel="stylesheet" href="css/style3.css" type="text/css" media="screen" />
-	<link rel="stylesheet prefetch" href="css/font-awesome.min.css" />
+	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 	<script type="text/javascript" charset="utf-8">
 	function hasClassName(inElement, inClassName)
 	{
@@ -103,7 +103,7 @@
 	}
 	</script>
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="js/player.js?v=1.1"></script>
+	<script type="text/javascript" src="js/player.js"></script>
 </head>
 <body onload="timedCount()">
 	<div id="container">
@@ -215,13 +215,30 @@
 					data-albumart="audio/covers/Noinaycoanh.jpg"
 					data-url="audio/Nơi Này Có Anh - Sơn Tùng M-TP.mp3">
 				</a>
+
+				<a href="#" class="play"
+					data-id="11"
+					data-album=""
+					data-artist="Ed Sheeran"
+					data-title="Perfect"
+					data-albumart="audio/covers/Perfect.jpg"
+					data-url="audio/Perfect - Ed Sheeran.mp3">
+				</a>
+
+				<a href="#" class="play"
+					data-id="12"
+					data-album=""
+					data-artist="911"
+					data-title="I Do"
+					data-albumart="audio/covers/Ido.jpg"
+					data-url="audio/I_Do.mp3">
+				</a>
 			</div>
 			<div class="audio">
 				<audio id="player" class="music" data-id="1" autoplay><source src="audio/Trai-Dat-Tron-Khong-Gi-La-Khong-The-Trung-Quan-Idol.mp3" type="audio/mpeg" /></audio>
 			</div>
 			<div class="current-info">
 				<div class="song-artist"></div>
-				<!--div class="song-album"></div-->
 				<div class="song-title"></div>
 			</div>
 			<div class="controls">
@@ -241,5 +258,9 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		var firstPreload = new Image();
+		firstPreload.src = "css/bg/2.jpg";
+	</script>
 </body>
 </html>
